@@ -1,0 +1,106 @@
+/* BODY STYLING  */
+body {
+  background-color: #2c3e50;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #d7dfe4;
+}
+
+/* HEADING STYLING  */
+.heading {
+  color: #d7dfe4;
+  font-size: 90px;
+  font-weight: bold;
+  margin-top: 0px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* DIGIT AND TEXT STYLING  */
+.digit {
+  font-size: 125px;
+  font-weight: bold;
+}
+.text {
+  font-size: 50px;
+  font-weight: bold;
+}
+#btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* BUTTON STYLING */
+.btn {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 0px 10px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+#start {
+  background-color: #1abc9c;
+}
+#stop {
+  background-color: #3498db;
+}
+#reset {
+  background-color: #e74c3c;
+}
+
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 780px) {
+  .heading {
+    font-size: 80px;
+    color: #d7dfe4;
+  }
+  .digit {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 636px) {
+  .heading {
+    font-size: 80px;
+    color: #d7dfe4;
+  }
+  .digit {
+    font-size: 90px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 415px) {
+  .heading {
+    font-size: 60px;
+    color: #d7dfe4;
+  }
+  .digit {
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
