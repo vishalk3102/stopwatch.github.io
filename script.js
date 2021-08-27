@@ -8,12 +8,14 @@ var timer = false;
 // FUNCTION FOR START BUTTON
 function start() {
   timer = true;
+  document.getElementById("start").onclick = null;
   stopwatch();
 }
 
 // FUNCTION FOR STOP BUTTON
 function stop() {
   timer = false;
+  document.getElementById("start").onclick = start;
 }
 
 // FUNCTION FOR RESET  BUTTON
@@ -27,6 +29,7 @@ function reset() {
   document.getElementById("minutes").innerHTML = "00";
   document.getElementById("seconds").innerHTML = "00";
   document.getElementById("count").innerHTML = "00";
+  document.getElementById("start").onclick = start;
 }
 
 //MAIN FUNCTION
