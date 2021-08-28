@@ -7,15 +7,15 @@ var timer = false;
 
 // FUNCTION FOR START BUTTON
 function start() {
+  
   timer = true;
-  document.getElementById("start").onclick = null;
   stopwatch();
 }
 
 // FUNCTION FOR STOP BUTTON
 function stop() {
+  startbtn.addEventListener('click', start, {once:true});
   timer = false;
-  document.getElementById("start").onclick = start;
 }
 
 // FUNCTION FOR RESET  BUTTON
@@ -29,7 +29,7 @@ function reset() {
   document.getElementById("minutes").innerHTML = "00";
   document.getElementById("seconds").innerHTML = "00";
   document.getElementById("count").innerHTML = "00";
-  document.getElementById("start").onclick = start;
+  startbtn.addEventListener('click', start, {once:true});
 }
 
 //MAIN FUNCTION
@@ -77,3 +77,12 @@ function stopwatch() {
     setTimeout(stopwatch, 10);
   }
 }
+
+
+const startbtn = document.querySelector("#start");
+const stopbtn = document.querySelector("#stop");
+const resetbtn = document.querySelector("#reset");
+
+startbtn.addEventListener('click', start, {once:true});
+stopbtn.addEventListener('click', stop);
+resetbtn.addEventListener('click', reset);
